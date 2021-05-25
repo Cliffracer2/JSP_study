@@ -1,0 +1,197 @@
+#wrap {
+	width: 971px; /* 1024*768로 해상도를 맞추어서 설계 */
+	/* 가운데 정렬을 위한 바깥쪽 여백 설정 */
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	color: #0ECF47; /* 글 색상 */
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 12px; /* 글꼴 크기 */
+	line-height: 24px; /* 줄 간격 */
+}
+
+table td,th {
+	border: #dddddd solid 1px; /* 경계선 색상 스타일 굵기 */
+	padding: 5px; /* 안쪽 여백 */
+}
+
+th {
+	background: #0ECF47; /* 배경색 */
+}
+
+img {
+	width: 220px; /* 이미지 너비(가로) */
+	height: 300px; /* 이미지 높이(세로) */
+}
+
+a {
+	text-decoration: none; /* 링크 밑줄 없애기 */
+	color: black; /* 글 색상 */
+}
+
+a:HOVER {
+	text-decoration: underline; /* 밑줄 */
+	color: #0ECF47; /* 글 색상 */
+}
+
+.btn{
+	display:inline-block;
+	padding:10px 35px;
+	background:#0ECF47 !important;
+	color:white !important;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	text-decoration:none !important;
+}
+input,textarea{
+	padding:10px 35px !important;
+	border-radius: 5px;
+	border:1px solid gray;
+}
+.imgBox{
+	width:30%;
+	height:400px;
+	box-sizing:border-box;
+	padding-right:10px;		
+}
+.imgBox img{width:100%;height:100%;}
+.tableBox{	
+	width:70%;	
+	height:400px;		
+}
+.tableBox table{width:100%;height:100%;}
+
+
+/* modal window CSS from w3school */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 700px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.btn-close{
+  float: right;
+  margin-top: 24px;
+  padding-right: 30px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+}
+
+.btn-close img {
+  width: 28px;
+  height: 28px;
+}
+
+/* The Close Button */
+.close {
+  color: #000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #fff;
+  color: #000;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+.modal-footer {
+  height: 60px;
+  padding: 2px 16px;
+  background-color: #fff;
+  color: #000;
+}
+
+.btn-footer {
+  margin-top: 20px;
+  margin-left: 85%;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+  color: #346aff;
+  border: none;
+  outline: none;
+  background-color: #fff;
+}
+
+/* 입력창 정상입력 체크 아이콘 */
+.btn-check {
+  position: absolute;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.19;
+  color: #346aff;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+.btn-check-ok {
+  display: block !important;
+}
+
+
+/* 비밀번호 입력 오류 메시지 */
+#password-error {
+	margin: 10px 10px;
+	color: red;
+	text-align:left;
+}
